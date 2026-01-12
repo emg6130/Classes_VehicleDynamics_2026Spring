@@ -23,7 +23,7 @@ Search for this, and you will find!
 </pre>
 
   <p align="center">
-    The purpose of this code repo is to house the code, documents, assignments, etc. for vehicle dynamics. Each semester's materials are copied from the "core" material, with passwords added to documents that contain copyright material that should not be shared to the public.  
+    The purpose of this code repo is to house the code, documents, assignments, etc. for vehicle dynamics. Each semester's materials are copied from the "core" material, with passwords added to documents that contain copyright material that should not be shared to the public. Passwords are shared on Canvas. 
     <br />
   </p>
 </p>
