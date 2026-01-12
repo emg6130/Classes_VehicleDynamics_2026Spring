@@ -1,4 +1,4 @@
-# Classes_VehicleDynamics_VDCore
+# Classes_VehicleDynamics_2026Spring
 
 <!--
 The following template is based on:
@@ -12,7 +12,7 @@ Search for this, and you will find!
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h2 align="center"> Classes_VehicleDynamics_VDCore
+  <h2 align="center"> Classes_VehicleDynamics_2026Spring
   </h2>
 
   <pre align="center">
@@ -49,7 +49,7 @@ Search for this, and you will find!
         <li><a href="#dependencies">Dependencies</li>
       </ul>
     </li>
-    <li><a href="#functions">Functions</li>
+    <!--li><a href="#functions">Functions</li>
       <ul>
         <li><a href="#basic-support-functions">Basic Support Functions</li>
         <ul>
@@ -66,7 +66,7 @@ Search for this, and you will find!
           <li><a href="#fcn_laps_findsegmentzonestartstop">fcn_Laps_findSegmentZoneStartStop - Supporting function that finds the portions of a path that meet a segment zone criteria</li>
           <li><a href="#fcn_laps_findpointzonestartstopandminimum">fcn_Laps_findPointZoneStartStopAndMinimum - Supporting function that finds the portions of a path that meet a point zone criteria</li>
         </ul>
-      </ul>
+      </ul-->
     <li><a href="#usage">Usage</a></li>
      <ul>
      <li><a href="#general-usage">General Usage</li>
@@ -256,7 +256,7 @@ Penn State welcomes students with disabilities into the University's educational
 
 Of note: exams are not time restricted, so there is no need to present time accomodation requests for the class - all students have whatever time they need to complete their exams.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -272,13 +272,13 @@ To get a local copy up and running follow these simple steps.
 2. Clone the repo
 
    ```sh
-   git clone https://github.com/ivsg-psu/Classes_VehicleDynamics_VDCore
+   git clone https://github.com/ivsg-psu/Classes_VehicleDynamics_2026Spring
    ```
 
 3. Run the main code in the root of the folder (script_demo_Laps.m), this will download the required utilities for this code, unzip the zip files into a Utilities folder (.\Utilities), and update the MATLAB path to include the Utility locations. This install process will only occur the first time. Note: to force the install to occur again, delete the Utilities directory and clear all global variables in MATLAB (type: "clear global *").
 4. Confirm it works! Run script_demo_Laps. If the code works, the script should run without errors. This script produces numerous example images such as those in this README file.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -292,7 +292,7 @@ The following are the top level directories within the repository:
  <li>/Utilities folder: Dependencies that are utilized but not implemented in this repository are placed in the Utilities directory. These can be single files but are most often folders containing other cloned repositories.</li>
 </ul>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -306,7 +306,7 @@ The following are the top level directories within the repository:
 
     For ease of getting started, the zip files of the directories used - without the .git repo information, to keep them small - are included in this repo.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -324,7 +324,7 @@ The function fcn_Laps_plotLapsXY plots the laps. For example, the function was u
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -338,7 +338,7 @@ The function fcn_Laps_fillSampleLaps creates dummy data to test lap functions. T
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -352,7 +352,7 @@ The function fcn_Laps_plotZoneDefinition plots any type of zone, allowing user-d
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -366,7 +366,7 @@ The function fcn_Laps_plotSegmentZoneDefinition plots a segment zone, allowing u
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font>
 </pre -->
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -382,7 +382,7 @@ The function fcn_Laps_breakDataIntoLaps is the core function for this repo that 
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -396,7 +396,7 @@ The function fcn_Laps_checkZoneType supports fcn_Laps_breakDataIntoLaps by check
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font>
 </pre-->
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -410,7 +410,7 @@ The function fcn_Laps_breakDataIntoLapIndices is a more advanced version of fcn_
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -424,7 +424,7 @@ The function fcn_Laps_findSegmentZoneStartStop is a supporting function that fin
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -438,7 +438,7 @@ The function fcn_Laps_findPointZoneStartStopAndMinimum is a supporting function 
   <!--font size="-2">Photo by <a href="https://unsplash.com/ko/@samuelchenard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Chenard</a> on <a href="https://unsplash.com/photos/Bdc8uzY9EPw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></font -->
 </pre>
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -466,7 +466,7 @@ help fcn_fcnname
 
 for any function to view function details.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -482,7 +482,7 @@ for any function to view function details.
 
 2. After running the main script to define the included directories for utility functions, one can then navigate to the Functions directory and run any of the functions or scripts there as well. All functions for this library are found in the Functions sub-folder, and each has an associated test script. Run any of the various test scripts; each can work as a stand-alone script.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -518,7 +518,7 @@ Why is an excursion point needed? Consider an example: it is common for the star
 
   requires 3 points to occur within the start zone area.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -527,7 +527,7 @@ Why is an excursion point needed? Consider an example: it is common for the star
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -535,7 +535,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 This code is still in development (alpha testing)
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
@@ -544,9 +544,9 @@ This code is still in development (alpha testing)
 
 Sean Brennan - [sbrennan@psu.edu](sbrennan@psu.edu)
 
-Project Link: [hhttps://github.com/ivsg-psu/Classes_VehicleDynamics_VDCore](https://github.com/ivsg-psu/Classes_VehicleDynamics_VDCore)
+Project Link: [hhttps://github.com/ivsg-psu/Classes_VehicleDynamics_2026Spring](https://github.com/ivsg-psu/Classes_VehicleDynamics_2026Spring)
 
-<a href="#classes_vehicledynamics_vdcore">Back to top</a>
+<a href="#classes_vehicledynamics_2026spring">Back to top</a>
 
 ***
 
