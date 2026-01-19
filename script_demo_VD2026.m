@@ -94,7 +94,7 @@ if ~exist('flag_VD2026_Folders_Initialized','var')
 
     % Add this function's folders to the path
     this_project_folders = {...
-        'Functions','Data'};
+        'Functions','Data','Assignments'};
     fcn_DebugTools_addSubdirectoriesToPath(pwd,this_project_folders)
 
     flag_VD2026_Folders_Initialized = 1;
@@ -139,8 +139,10 @@ setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LON','0.0000054');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 disp('Welcome to the demo code for the VD2026 library!')
+fprintf(1,'Press any key to continue on to the open assignments.\n');
+pause;
 
-
+script_Week01_HW01
 
 %% Functions follow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
