@@ -64,6 +64,10 @@ ith_repo = ith_repo+1;
 dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotRoad';
 dependencySubfolders{ith_repo} = {'Functions','Data'};
 
+ith_repo = ith_repo+1;
+dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/Classes_Grading_PrepareSubmission';
+dependencySubfolders{ith_repo} = {''};
+
 % ith_repo = ith_repo+1;
 % dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/PathPlanning_GeomTools_GeomClassLibrary';
 % dependencySubfolders{ith_repo} = {'Functions','Data'};
