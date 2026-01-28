@@ -143,10 +143,11 @@ setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LON','0.0000054');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 disp('Welcome to the demo code for the VD2026 library!')
-fprintf(1,'Press any key to continue on to the open assignments.\n');
+fprintf(1,'Press any key to continue to the open assignments.\n');
 pause;
 
-script_Week01_HW01
+% script_Week01_HW01
+script_Week02_HW02
 
 %% Functions follow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
