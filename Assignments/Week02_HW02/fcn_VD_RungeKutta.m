@@ -55,9 +55,9 @@ if flag_check_inputs
     end
     
     % Check the inputs
-    fcn_VD_checkInputsToFunctions(input_function,'function handle');
-    fcn_VD_checkInputsToFunctions(initial_time,'non negative');
-    fcn_VD_checkInputsToFunctions(time_interval,'positive');
+    % fcn_VD_checkInputsToFunctions(input_function,'function handle');
+    % fcn_VD_checkInputsToFunctions(initial_time,'non negative');
+    % fcn_VD_checkInputsToFunctions(time_interval,'positive');
 end
 
 %% Calculate Lateral acceleration and Yaw acceleration
