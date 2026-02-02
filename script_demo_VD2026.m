@@ -128,6 +128,35 @@ setenv('MATLABFLAG_PLOTROAD_REFERENCE_ALTITUDE','344.189');
 setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LAT','-0.0000008');
 setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LON','0.0000054');
 
+%% Set up warnings
+simulinkFileInfo = Simulink.MDLInfo(thisVersionNameWithExtension);
+
+% Confirm that this is 2025b
+if ~strcmpi(simulinkFileInfo.ReleaseName,'R2025b')
+	warning('Expected release version 2025b, but found %s instead.',info.ReleaseName);
+	fcn_DebugTools_cprintf('*red','Many errors may be introduced by using an out-of-date MATLAB version. Students using out of date versions are far more likely to face additional challenges in completing assignments.');
+	fprintf(1,'Press any key to continue.\n');
+	pause;
+end
+
+thisPath = pwd;
+
+% Confirm that path contains no spaces
+if contains(thisPath,' ') 
+	warning('A space character was found in the working path: %s. Spaces in file names and paths can cause evaluation errors in some of the functions within this code set.',thisPath);
+	fcn_DebugTools_cprintf('*red','Please consider installing the code into a folder that has no spaces.');
+	fprintf(1,'Press any key to continue.\n');
+	pause;
+end
+
+% Confirm that path contains no minus signs
+if contains(thisPath,'-') 
+	warning('A minus character was found in the working path: %s. Minus signs in file names and paths will cause evaluation errors in some of the functions within this code set.',thisPath);
+	fcn_DebugTools_cprintf('*red','Please re-install the code into a folder that has no minus signs in the path name.');
+	fprintf(1,'Press any key to continue.\n');
+	pause;
+end
+
 %% Start of Demo Code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
