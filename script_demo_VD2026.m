@@ -129,11 +129,11 @@ setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LAT','-0.0000008');
 setenv('MATLABFLAG_PLOTROAD_ALIGNMATLABLLAPLOTTINGIMAGES_LON','0.0000054');
 
 %% Set up warnings
-simulinkFileInfo = Simulink.MDLInfo(thisVersionNameWithExtension);
+thisVersion = version('-release');
 
 % Confirm that this is 2025b
-if ~strcmpi(simulinkFileInfo.ReleaseName,'R2025b')
-	warning('Expected release version 2025b, but found %s instead.',info.ReleaseName);
+if ~strcmpi(thisVersion,'2025b')
+	warning('Expected release version 2025b, but found %s instead.',thisVersion);
 	fcn_DebugTools_cprintf('*red','Many errors may be introduced by using an out-of-date MATLAB version. Students using out of date versions are far more likely to face additional challenges in completing assignments.');
 	fprintf(1,'Press any key to continue.\n');
 	pause;
