@@ -157,6 +157,11 @@ if contains(thisPath,'-')
 	pause;
 end
 
+%% Create Submissions folder
+if ~exist(fullfile(pwd,'Submissions'),'dir')
+	mkdir('Submissions');
+end
+
 %% Start of Demo Code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
