@@ -89,26 +89,26 @@ timeInterval, steeringAndTimeInputs, U, (-1));
 sgtitle(titleString, 'Interpreter','none');
 
 % The XY Plots
-subplot(4,1,1);
 h_plot = fcn_VD_plotTrajectory(stateTrajectoryMATLAB(:,1:2),(figNum));
 set(h_plot,'LineWidth',5);
 h_plot = fcn_VD_plotTrajectory(stateTrajectorySimulink(:,1:2),(figNum));
 set(h_plot,'LineWidth',3);
 
-subplot(4,1,2);
-plot(t, abs(stateTrajectoryMATLAB(:,1) - stateTrajectorySimulink(:,1)));
+figure(1111);
+subplot(3,1,1);
+plot(tMATLAB, abs(stateTrajectoryMATLAB(:,1) - stateTrajectorySimulink(:,1)));
 xlabel('Time [s]','Interpreter','Latex','Fontsize',18)
 ylabel('X-error [m]','Interpreter','Latex','Fontsize',18)
 grid on
 
-subplot(4,1,3);
-plot(t, abs(stateTrajectoryMATLAB(:,2) - (stateTrajectorySimulink(:,2)+eps*10)));
+subplot(3,1,2);
+plot(tMATLAB, abs(stateTrajectoryMATLAB(:,2) - (stateTrajectorySimulink(:,2)+eps*10)));
 xlabel('Time [s]','Interpreter','Latex','Fontsize',18)
 ylabel('Y-error [m]','Interpreter','Latex','Fontsize',18)
 grid on
 
-subplot(4,1,4);
-plot(t, abs(steeringUsedMATLAB(:,1) - steeringUsedSimulink(:,1)));
+subplot(3,1,3);
+plot(tMATLAB, abs(steeringUsedMATLAB(:,1) - steeringUsedSimulink(:,1)));
 xlabel('Time [s]','Interpreter','Latex','Fontsize',18)
 ylabel('Y-error [m]','Interpreter','Latex','Fontsize',18)
 grid on
@@ -131,7 +131,7 @@ grid on
 % (too complex to check)
 
 % Make sure plot opened up
-assert(isequal(get(gcf,'Number'),figNum));
+% assert(isequal(get(gcf,'Number'),figNum));
 
 
 %% Test cases start here. These are very simple, usually trivial
@@ -149,9 +149,9 @@ assert(isequal(get(gcf,'Number'),figNum));
 % See: https://patorjk.com/software/taag/#p=display&f=Big&t=TESTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Figures start with 2
-
-close all;
-fprintf(1,'Figure: 2XXXXXX: TEST mode cases\n');
+% 
+% close all;
+% fprintf(1,'Figure: 2XXXXXX: TEST mode cases\n');
 
 
 %% Fast Mode Tests
@@ -169,8 +169,8 @@ fprintf(1,'Figure: 2XXXXXX: TEST mode cases\n');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Figures start with 8
 
-close all;
-fprintf(1,'Figure: 8XXXXXX: FAST mode cases\n');
+% close all;
+% fprintf(1,'Figure: 8XXXXXX: FAST mode cases\n');
 
 % %% Basic example - NO FIGURE
 % figNum = 80001;
