@@ -55,7 +55,7 @@ steeringAndTimeInputs = [simulationTimes steering_amplitude_degrees*pi/180*sin((
 
 % Set up parameters
 U = 20;  % U is forward velocity of vehicle in longitudinal direction, [m/s] (rule of thumb: 1 mph ~= 2* m/s)
-L = 2.34; %#ok<NASGU> % Wheelbase in [m]
+L = 2.34; % Wheelbase in [m]
 
 % Call the function
 [stateTrajectory, t, steeringUsed] = ...
