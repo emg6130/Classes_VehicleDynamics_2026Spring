@@ -16,6 +16,13 @@
 % 
 % 2026_01_12 by Sean Brennan, sbrennan@psu.edu
 % - First edit of the repo from the "Laps" library template
+%
+% 2026_02_12 by Sean Brennan, sbrennan@psu.edu
+% - Cleanup of incorrect code pushed in by prior students, 
+% - In script_demo_VD2026
+%   % * Added automatic creation of StudentWork folder
+%
+
 
 % TO-DO:
 % - 2026_01_12 by Sean Brennan, sbrennan@psu.edu
@@ -157,9 +164,15 @@ if contains(thisPath,'-')
 	pause;
 end
 
+
 %% Create Submissions folder
 if ~exist(fullfile(pwd,'Submissions'),'dir')
 	mkdir('Submissions');
+end
+
+%% Create StudentWork folder
+if ~exist(fullfile(pwd,'StudentWork'),'dir')
+	mkdir('StudentWork');
 end
 
 %% Start of Demo Code
