@@ -1,10 +1,12 @@
-
 %% Introduction to and Purpose of the Code
 % This is the explanation of the code that can be found by running
-%       script_demo_VD2026.m
+%
+%       script_demo_2026Spring.m
+%
 % This is a script to demonstrate the functions within the VD2026 code
 % library. This code repo is typically located at:
-%   https://github.com/ivsg-psu/FeatureExtraction_DataClean_BreakDataIntoLaps
+%
+%   https://github.com/ivsg-psu/Classes_VehicleDynamics_2026Spring
 %
 % If you have questions or comments, please contact Sean Brennan at
 % sbrennan@psu.edu
@@ -16,6 +18,16 @@
 % 
 % 2026_01_12 by Sean Brennan, sbrennan@psu.edu
 % - First edit of the repo from the "Laps" library template
+%
+% 2026_02_12 by Sean Brennan, sbrennan@psu.edu
+% - Cleanup of incorrect code pushed in by prior students, 
+% - In script_demo_VD2026
+%   % * Added automatic creation of StudentWork folder
+%
+% 2026_02_20 by Sean Brennan, sbrennan@psu.edu
+% - In script_demo_2026Spring.m
+%   % * Renamed to avoid confusion with VD subrepo
+
 
 % TO-DO:
 % - 2026_01_12 by Sean Brennan, sbrennan@psu.edu
@@ -67,6 +79,22 @@ dependencySubfolders{ith_repo} = {'Functions','Data'};
 ith_repo = ith_repo+1;
 dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/Classes_Grading_PrepareSubmission';
 dependencySubfolders{ith_repo} = {''};
+
+ith_repo = ith_repo+1;
+dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/PathPlanning_GeomTools_GeomClassLibrary';
+dependencySubfolders{ith_repo} = {'Functions','Data'};
+
+ith_repo = ith_repo+1;
+dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/PathPlanning_PathTools_PathClassLibrary';
+dependencySubfolders{ith_repo} = {'Functions','Data'};
+
+ith_repo = ith_repo+1;
+dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/FieldDataCollection_GPSRelatedCodes_GPSClass';
+dependencySubfolders{ith_repo} = {'Functions'};
+
+ith_repo = ith_repo+1;
+dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/Classes_VehicleDynamics_2026VDLibrary';
+dependencySubfolders{ith_repo} = {'Functions','Data'};
 
 % ith_repo = ith_repo+1;
 % dependencyURLs{ith_repo} = 'https://github.com/ivsg-psu/PathPlanning_GeomTools_GeomClassLibrary';
@@ -157,9 +185,15 @@ if contains(thisPath,'-')
 	pause;
 end
 
+
 %% Create Submissions folder
 if ~exist(fullfile(pwd,'Submissions'),'dir')
 	mkdir('Submissions');
+end
+
+%% Create StudentWork folder
+if ~exist(fullfile(pwd,'StudentWork'),'dir')
+	mkdir('StudentWork');
 end
 
 %% Start of Demo Code
@@ -181,7 +215,7 @@ fprintf(1,'Press any key to continue to the open assignments.\n');
 pause;
 
 % script_Week01_HW01
-script_Week02_HW02
+% script_Week02_HW02
 
 %% Functions follow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
